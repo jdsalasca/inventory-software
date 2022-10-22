@@ -1,0 +1,49 @@
+.bg-image {
+  background-image: url("../../../.././public/img/LandingPage.svg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+
+
+.cover-layer {
+    // background-image: url("../../../.././public/img/tupid-shape.svg");
+    height: 70rem;
+    width: 50rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+  }
+
+.div-landing-page-buttons-options {
+  display: flex;
+  justify-content: left;
+  gap: 1.5rem;
+  flex-direction: column;
+  max-width: 30%;
+  align-self: start !important; ;
+}
+
+.div-landing-page-card {
+  display: flex;
+  padding: 0;
+  color: black;
+  position: absolute !important;
+  align-self: center;
+  flex-direction: column;
+  text-align: left;
+  align-items: left !important; 
+}
+.container-nav-toolbar {
+  min-width: 90%;
+}
+.div-parent{
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+}

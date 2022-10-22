@@ -1,41 +1,34 @@
 import React, { Fragment } from "react";
+import { Container, Nav, Navbar} from "react-bootstrap";
+
 export const ToolBar = () => {
   return (
     <Fragment>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <Navbar className=" mx-0" bg="light" expand="lg">
+        <Container className="mx-5 px-0 d-lg-flex col-12 container-nav-toolbar">
+          <Navbar.Brand href="#home" className="align-self-start">
+            <img 
+              src="/img/icon.svg"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />
+            Software de inventario
+          </Navbar.Brand>
+          <div className="px-0 mx-0 align-self-end ">
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto ">
+                <Nav.Link href="#home">Nuestros servicios</Nav.Link>
+                <Nav.Link href="#link">Te contactamos</Nav.Link>
+                <Nav.Link href="#link">Conozcanos</Nav.Link>
 
-  <a className="navbar-brand" href="#">Logo</a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div className="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul className="navbar-nav">
-      <li className="nav-item active">
-        <a className="nav-link" href="#"> <span className="sr-only">Nosotros</span></a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#"></a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Te contactamos</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Nuestros servicios</a>
-      </li>
-      <li className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a className="dropdown-item" href="#">Action</a>
-          <a className="dropdown-item" href="#">Another action</a>
-          <a className="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
-  
+              </Nav>
+            </Navbar.Collapse>
+          </div>
+          <Navbar.Toggle aria-controls="basic-navbar-nav " />
+        </Container>
+      </Navbar>
     </Fragment>
   );
 };
