@@ -1,6 +1,7 @@
 
 .App {
   text-align: center;
+  
 }
 .app-footer{
   position: absolute;
@@ -10,7 +11,8 @@
 }
 .app-parent{
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 .App-logo {
