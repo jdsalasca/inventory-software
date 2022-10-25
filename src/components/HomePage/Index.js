@@ -32,8 +32,7 @@ export const Index = () => {
       <div class="col-md-12">
         <div class="section-header text-center pb-5">
           <h2>Nuestros servicios</h2>
-          <p>Lorem ipsum dolor sit amet consectetur <br/> adipisicing elit. Doloremque quos magni vero quaerat
-            laboriosam</p>
+
         </div>
       </div>
     </div>
@@ -94,6 +93,7 @@ export const Index = () => {
           className={className}>{welcome}</Carousel.Item>
 
           <Carousel.Item className={className}>
+            
             {ourPeople}
 {/*             
             <h3>second slide label</h3>
