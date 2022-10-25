@@ -24,6 +24,61 @@ export const Index = () => {
       </div>
     </div>
   );
+  const ourPeople = (
+    
+  <section id="services" class="services section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-header text-center pb-5">
+          <h2>Nuestros servicios</h2>
+          <p>Lorem ipsum dolor sit amet consectetur <br/> adipisicing elit. Doloremque quos magni vero quaerat
+            laboriosam</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="card text-white text-center bg-dark pb-2">
+          <div class="card-body">
+            <i class="bi bi-inboxes-fill"></i>
+            <h3 class="card-title">Buscador de archivos</h3>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis iusto porro ducimus
+              earum, sequi nam et. Optio necessitatibus nisi pariatur debitis fugit, sint amet. Expedita officiis
+              autem eius animi cumque.</p>
+            <button class="btn btn-warning text-dark">Leer mas</button>-
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="card text-white text-center bg-dark pb-2">
+          <div class="card-body">
+            <i class="bi bi-cloud-download-fill"></i>
+            <h3 class="card-title">Descarga de documentos</h3>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis iusto porro ducimus
+              earum, sequi nam et. Optio necessitatibus nisi pariatur debitis fugit, sint amet. Expedita officiis
+              autem eius animi cumque.</p>
+            <button class="btn btn-warning text-dark">Leer mas</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="card text-white text-center bg-dark pb-2">
+          <div class="card-body">
+            <i class="bi bi-people-fill"></i>
+            <h3 class="card-title">Diferentes roles</h3>
+            <p class="lead">Lorem ipsum dolor sit amet, ducimus earum, sequi nam et. Optio necessitatibus nisi
+              pariatur debitis fugit, sint amet. Expedita officiis autem eius animi cumque.</p>
+            <button class="btn btn-warning text-dark">Leer mas</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  )
   const className = "container row col align-self-center";
   return (  
     <div className="div-parent">
@@ -39,10 +94,12 @@ export const Index = () => {
           className={className}>{welcome}</Carousel.Item>
 
           <Carousel.Item className={className}>
+            {ourPeople}
+{/*             
             <h3>second slide label</h3>
             <p>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            </p> */}
           </Carousel.Item>
           <Carousel.Item className={className}>
             <h3>Third slide label</h3>
